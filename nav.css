@@ -1,0 +1,50 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow: hidden;
+  background: var(--greyLight-1);
+}
+
+
+
+nav ul li {
+  display: block;
+  padding-top: 5vh;
+  padding-left: calc(100% / 11);
+  margin: auto;
+  transition: 1s;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+nav ul {
+  position: absolute;
+  top: 35vh;
+  left: 80vw;
+  z-index: 1;
+}
+
+a {
+  color:var(--greyLight-3) ;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--greyDark) ;
+}
